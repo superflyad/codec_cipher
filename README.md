@@ -10,9 +10,11 @@ Codec Cipher is not an encryption system today. The current repository focuses o
 
 ## Core Concept
 
-Codec Cipher is a persistent dimensional laboratory where numeric data can be represented as geometric and hyperdimensional structures.
+Codec Cipher is a persistent nested dimensional network laboratory where data becomes structure. Numeric input can begin as simple values or dimensional objects, but the project direction is to let repeated runs refine those values into a connected network of nodes, edges, cubes, and cubes within cubes.
 
-A collection of numeric values is treated as a dimensional object. The number of values determines whether the object currently behaves like a square, cube, hyperdimensional object, or unstable object. Saved objects can be restored later so experiments can continue across sessions.
+Each run should add context: what was processed, what changed, how cube regions were refined, and how the resulting structure relates to earlier snapshots. Over time, the same experiment may deepen into nested cube networks whose meaning depends on sequence and surrounding context, not only on the final visible shape.
+
+Recovery is therefore a research question. Reconstructing data, structure, or meaning may depend on run order, saved snapshots, available metadata, and the context that created each nested region. Codec Cipher is a sandbox for exploring these ideas; it is not a finished encryption system.
 
 ## Current Capabilities
 
@@ -25,14 +27,14 @@ A collection of numeric values is treated as a dimensional object. The number of
 
 ## Planned Capabilities
 
-- Mutation system for controlled object changes.
-- Object state comparison and history tracking.
-- Experiment logs for persistent research notes.
-- Richer terminal interface for navigating objects and experiments.
-- Projection tools for higher-dimensional structures.
-- Stability scoring for dimensional objects.
-- Reversible transformations as a long-term goal.
-- Encoding, decoding, and early cipher research built on reversible dimensional experiments.
+- Network core for nodes, edges, cubes, nested cubes, and whole-network inspection.
+- Run sequence tracking so repeated executions can refine the same structure over time.
+- Cube refinement and nesting tools for exploring cubes within cubes.
+- Text and ASCII visualization before richer SVG or graphical output.
+- Persistent snapshots, replay, and branching experiment history.
+- Complexity and recovery difficulty metrics based on nesting depth, edge density, sequence context, and missing information.
+- Reversible transformations as a long-term research goal.
+- Encoding, decoding, and early cipher research built on traceable dimensional network experiments.
 
 ## Build Instructions
 
