@@ -1,16 +1,19 @@
 # Codec Cipher Vision
 
-Codec Cipher is not an encryption system.
+Codec Cipher is not an encryption system today.
 
-Codec Cipher is a dimensional laboratory where information is represented as geometric structures. It treats collections of numeric values as dimensional objects that can be named, classified, inspected, stored, and later restored as part of a persistent sandbox.
+Codec Cipher is a dimensional laboratory where information becomes structure. Its v2 core architecture is nested cube networks refined through deterministic runs: data forms nodes and relationships, relationships form cube structures, cubes can contain other cubes, and each run records how the structure changes over time.
 
-The initial laboratory foundation focuses on object creation, classification, terminal inspection, and disk persistence. It intentionally does not implement mutation or encryption behavior yet; those capabilities belong to later research layers built on top of the foundational object model.
+The terminal application still exposes the original object creation, classification, inspection, and disk persistence workflow. The core library now supports the v2 research layer: networks, nested cube geometry, run history, replay, visualization, persistence, experiment sessions, comparison, and complexity research.
 
-Future capabilities may include:
+Core capabilities include:
 
-- Object mutation
-- Object evolution
-- Dimensional transformations
-- Visualization
-- Reversible transformations
-- Encryption research
+- Network nodes, edges, and relationship registries
+- Cube primitives with vertices, generated edges, and metrics
+- Nested cube hierarchies
+- Deterministic run sequences and replay
+- Refinement operations that grow or mutate topology
+- Network and cube visualization
+- Experiment persistence and comparison
+- Complexity and recovery difficulty metrics
+- Reversible transformations and cipher research remain long-term research directions

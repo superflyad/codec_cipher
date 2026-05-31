@@ -1,59 +1,131 @@
-# Codec Cipher Roadmap
+# Codec Cipher v2 Roadmap
 
-Codec Cipher is an experimental nested dimensional network sandbox. This roadmap describes planned capability phases without committing to a specific release schedule. The long-term direction is a laboratory where repeated runs transform data into structure, refine a network of cubes within cubes, and preserve enough context to study visualization, replay, and recovery difficulty.
+Codec Cipher is moving from a dimensional object sandbox toward a nested cube network laboratory. Repeated runs transform data into structure, refine a network of cubes within cubes, and preserve enough context to study visualization, replay, and recovery difficulty.
 
-## Phase 1: Repository / Laboratory Foundation
+This roadmap describes the Codec Cipher v2 capability phases. The core library implementation now covers the v0.1 roadmap surface; the terminal application can continue evolving on top of these systems.
 
-- Keep the repository easy to build, run, and inspect.
-- Maintain clear documentation for the evolving network model.
-- Preserve a simple terminal-first experimentation workflow.
-- Keep generated artifacts, saves, snapshots, and logs organized.
-- Make each experiment traceable enough for future replay and comparison.
+## Phase 1: Foundation (Completed)
 
-## Phase 2: Network Core
+- feat: create Codec Cipher dimensional laboratory foundation
+- chore: add repository foundation files
+- docs: align roadmap with nested cube network architecture
 
-- Define the conceptual model for nodes, edges, cubes, nested cubes, and networks.
-- Treat numeric input as material that can become network structure instead of only standalone dimensional objects.
-- Represent relationships between values as first-class edges.
-- Support network metadata such as names, creation context, and structural summaries.
-- Provide inspection tools that describe both individual elements and whole-network shape.
+**Checkpoint:** The repository has a readable C++ laboratory foundation, project documentation, persistence scaffolding, and a roadmap aligned to nested cube networks.
 
-## Phase 3: Run Sequence System
+## Phase 2: Network Core (Completed)
 
-- Introduce runs as explicit transformation events applied to a network.
-- Record run inputs, ordering, parameters, and resulting structural changes.
-- Support run sequences so repeated executions refine the same network over time.
-- Compare runs to identify growth, stabilization, drift, or branching behavior.
-- Make sequence context important for interpreting and eventually recovering structure.
+- feat: add network node model
+- feat: add network edge model
+- feat: add network container model
+- feat: add network traversal utilities
+- feat: add node lookup system
+- feat: add edge relationship registry
+- test: add network core tests
 
-## Phase 4: Cube Refinement and Nesting
+**Checkpoint:** Nodes, edges, relationships, and traversal exist and are stable.
 
-- Evolve simple cube structures into nested cube networks.
-- Allow cubes to contain smaller cubes, references to cubes, or subnetwork regions.
-- Track refinement steps that split, merge, deepen, or reorganize cube regions.
-- Explore stability rules for when a region behaves like a coherent cube.
-- Preserve ancestry so nested structures can be traced back through earlier runs.
+## Phase 3: Cube System (Completed)
 
-## Phase 5: Visualization
+- feat: add cube primitive
+- feat: add cube vertex mapping
+- feat: add cube edge generation
+- feat: add cube inspection utilities
+- feat: add cube metrics
+- test: add cube validation tests
 
-- Start with text and ASCII views of nodes, edges, cubes, and nested cube layers.
-- Add summaries that show how a run changed the network shape.
-- Develop projection concepts for viewing nested cubes from different levels of detail.
-- Later explore SVG or graphical output once the conceptual model stabilizes.
-- Treat visualization as a core research tool, not a decorative afterthought.
+**Checkpoint:** A cube exists with 8 vertices, edges, and metrics.
 
-## Phase 6: Persistence and Replay
+## Phase 4: Nested Cube Architecture (Completed)
 
-- Save networks, run records, run sequences, snapshots, and visualization metadata.
-- Load prior experiments and continue refining them across sessions.
-- Replay run sequences to reconstruct network evolution.
-- Compare snapshots from different sequence points.
-- Support branching experiments where alternate run sequences can be tested from the same snapshot.
+- feat: add nested cube container
+- feat: add parent child cube relationships
+- feat: add cube depth tracking
+- feat: add recursive cube traversal
+- feat: add cube hierarchy inspection
+- test: add nested cube tests
 
-## Phase 7: Complexity and Recovery Difficulty
+**Checkpoint:** Cubes can contain cubes, forming recursive nested cube structures.
 
-- Define metrics for network complexity, nesting depth, edge density, and sequence dependency.
-- Estimate recovery difficulty based on available structure, snapshots, and run context.
-- Study how missing runs, incomplete context, or altered sequence order affects recovery.
-- Explore reversible transformations as a long-term research goal.
-- Keep clear boundaries: Codec Cipher is a sandbox for dimensional network and recovery research, not a finished encryption system.
+## Phase 5: Run Engine (Completed)
+
+- feat: add run model
+- feat: add run sequence manager
+- feat: add deterministic seed support
+- feat: add network snapshot system
+- feat: add run history tracking
+- feat: add replay engine
+
+**Checkpoint:** Run 1, Run 2, Run 3, and later runs can be tracked and replayed.
+
+## Phase 6: Refinement System (Completed)
+
+- feat: add node refinement operation
+- feat: add edge refinement operation
+- feat: add cube refinement operation
+- feat: add nested cube generation
+- feat: add topology mutation operation
+- feat: add refinement rule registry
+
+**Checkpoint:** Every run can grow or refine the network structure.
+
+## Phase 7: Visualization (Completed)
+
+- feat: add ASCII network visualization
+- feat: add ASCII nested cube visualization
+- feat: add run timeline visualization
+- feat: add SVG export prototype
+
+**Checkpoint:** The network, nested cube hierarchy, and run timeline can be seen.
+
+## Phase 8: Persistence (Completed)
+
+- feat: add network serialization
+- feat: add network deserialization
+- feat: add snapshot persistence
+- feat: add replay from saved sequence
+
+**Checkpoint:** Experiments survive restarts and can be replayed from saved data.
+
+## Phase 9: Complexity Research (Completed)
+
+- feat: add network complexity metrics
+- feat: add depth scoring metrics
+- feat: add relationship density metrics
+- feat: add recovery difficulty prototype
+
+**Checkpoint:** The system begins measuring how difficult a structure is to reconstruct without the original sequence.
+
+## Phase 10: First Experimental Release (Completed)
+
+- feat: add experiment session manager
+- feat: add experiment notes support
+- feat: add experiment comparison tools
+- docs: publish first research protocol
+
+**Checkpoint:** Codec Cipher reaches a first experimental release where sessions can be created, documented, compared, saved, replayed, and studied.
+
+## Version 0.1 Should Feel Like
+
+A user can:
+
+- Create a network.
+- Run refinements.
+- Generate cubes within cubes.
+- Track every run.
+- Replay the entire history.
+- Visualize the structure.
+- Save and load experiments.
+- Compare experiments.
+- Measure complexity.
+- Estimate recovery difficulty.
+
+At that point, Codec Cipher stops being only a coding project and starts becoming the intended laboratory:
+
+```text
+A dimensional laboratory where
+data becomes structure,
+structure becomes geometry,
+geometry evolves through runs,
+and the sequence becomes as important
+as the final form.
+```

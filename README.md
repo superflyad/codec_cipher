@@ -1,12 +1,12 @@
 # Codec Cipher
 
-Codec Cipher is an experimental, early-stage C++ dimensional laboratory for representing numeric data as geometric and hyperdimensional structures. It is a persistent sandbox where named numeric objects can be created, classified, inspected, saved, and loaded for continued experimentation.
+Codec Cipher is an experimental, early-stage C++ dimensional laboratory for exploring how data can become structure, structure can become geometry, and geometry can evolve through deterministic runs. Its v2 direction is nested cube networks: networks of nodes and relationships that form cubes, grow into cubes within cubes, and preserve the sequence that created them.
 
 ## Project Status
 
 **Experimental / early-stage.**
 
-Codec Cipher is not an encryption system today. The current repository focuses on project structure, terminal interaction, object classification, and simple persistence so future research can build on a readable foundation.
+Codec Cipher is not an encryption system today. The current repository includes the original terminal dimensional-object sandbox plus v2 core library systems for networks, cubes, nested cube hierarchies, deterministic runs, refinement, visualization, persistence, experiment comparison, and complexity research.
 
 ## Core Concept
 
@@ -16,7 +16,22 @@ Each run should add context: what was processed, what changed, how cube regions 
 
 Recovery is therefore a research question. Reconstructing data, structure, or meaning may depend on run order, saved snapshots, available metadata, and the context that created each nested region. Codec Cipher is a sandbox for exploring these ideas; it is not a finished encryption system.
 
+The current terminal implementation still treats a collection of numeric values as a dimensional object. The number of values determines whether the object currently behaves like a square, cube, hyperdimensional object, or unstable object. Saved objects can be restored later so experiments can continue across sessions.
+
 ## Current Capabilities
+
+Core library:
+
+- Create networks from nodes, edges, relationships, and traversal utilities.
+- Generate cube primitives with 8 vertices, 12 edges, inspection helpers, and metrics.
+- Build nested cube hierarchies with parent-child relationships, depth tracking, and recursive traversal.
+- Record deterministic runs with snapshots, history, and replay.
+- Apply node, edge, cube, nested cube, and topology refinement operations.
+- Render ASCII network, nested cube, and run timeline views, plus an SVG network export prototype.
+- Serialize and deserialize networks, snapshots, and replayable run sequences.
+- Manage experiment sessions, notes, comparisons, complexity metrics, and recovery difficulty estimates.
+
+Terminal application:
 
 - Create named dimensional objects from numeric values.
 - Classify objects as square, cube, hyperdimensional, or unstable based on value count.
@@ -25,16 +40,14 @@ Recovery is therefore a research question. Reconstructing data, structure, or me
 - Load saved objects back into the laboratory.
 - List objects known during the current session.
 
-## Planned Capabilities
+## Continuing Work
 
-- Network core for nodes, edges, cubes, nested cubes, and whole-network inspection.
-- Run sequence tracking so repeated executions can refine the same structure over time.
-- Cube refinement and nesting tools for exploring cubes within cubes.
-- Text and ASCII visualization before richer SVG or graphical output.
-- Persistent snapshots, replay, and branching experiment history.
-- Complexity and recovery difficulty metrics based on nesting depth, edge density, sequence context, and missing information.
-- Reversible transformations as a long-term research goal.
-- Encoding, decoding, and early cipher research built on traceable dimensional network experiments.
+- Expose the v2 core systems through richer terminal workflows.
+- Expand visualization beyond the current ASCII and SVG prototypes.
+- Harden persistence formats as experiments become more complex.
+- Refine complexity and recovery difficulty metrics through research sessions.
+- Explore reversible transformations as a long-term research goal.
+- Build encoding, decoding, and early cipher research on traceable dimensional network experiments.
 
 ## Build Instructions
 
@@ -91,7 +104,7 @@ codec_cipher/
 - **C++ standard library first.** Prefer standard containers, algorithms, filesystem utilities, and language features before introducing third-party code.
 - **Readable architecture.** Keep classes focused, names descriptive, and control flow understandable for future experimenters.
 - **Persistent experimentation.** Design features so object state, experiments, and research artifacts can eventually survive across sessions.
-- **Reversible transformations are a long-term goal.** Mutation, encoding, and cipher research should preserve a path toward traceable and reversible operations.
+- **Run history matters.** Refinement, replay, encoding, and cipher research should preserve the sequence that produced a structure, not only the final form.
 
 ## Object Classifications
 
