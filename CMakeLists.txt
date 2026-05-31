@@ -9,7 +9,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(codec_cipher
     app/main.cpp
     src/DimensionalObject.cpp
+    src/Edge.cpp
     src/Laboratory.cpp
+    src/Node.cpp
     src/Persistence.cpp
     src/TerminalView.cpp
 )

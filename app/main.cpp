@@ -1,4 +1,6 @@
+#include "Edge.h"
 #include "Laboratory.h"
+#include "Node.h"
 #include "Persistence.h"
 #include "TerminalView.h"
 
@@ -106,6 +108,16 @@ int main() {
     Laboratory laboratory;
     Persistence persistence;
     TerminalView view;
+
+    const Node exampleNode("node:origin", "Origin Signal", 1.0, 0);
+    const Edge exampleEdge("edge:origin-self",
+                           exampleNode.getId(),
+                           exampleNode.getId(),
+                           "self-reference",
+                           1.0);
+    view.displayMessage("Network primitive example:");
+    view.displayMessage("  " + exampleNode.getSummary());
+    view.displayMessage("  " + exampleEdge.getSummary());
 
     bool running = true;
     while (running) {
